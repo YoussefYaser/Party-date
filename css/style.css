@@ -1,0 +1,157 @@
+*::selection{
+    background-color: #cdcccc;
+}
+
+/* START CUSTOM CLASSES */
+
+.w-fit{
+    width: fit-content;
+}
+
+.xy-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* END CUSTOM CLASSES */
+
+/* START HOME */
+
+.page .home{
+    background-image: linear-gradient(#ff00007a, #ff0000c4),
+    url(../images/events-heavenly-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page .home .home-caption h1{
+    font-size: 50px;
+}
+
+/* END HOME */
+
+/* START ASIDE */
+
+.page aside{
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.page aside .main {
+    display: none;
+}
+
+.page aside .main ul{
+    min-width: 140px;
+}
+
+.page aside .main span,
+.page aside .main ul li{
+    transition: 0.2s;
+}
+
+.page aside .main span:hover, 
+.page aside .main ul li:hover{
+    color: rgb(242, 44, 44);
+    cursor: pointer;
+}
+
+.page aside .main span:hover{
+    transform: scale(1.2);
+}
+
+.page aside .main ul li:hover{
+    padding-left: 10px;
+}
+
+
+.page aside .bar{
+    transition: 0.3s;
+}
+
+.page aside .bar:hover{
+    transform: perspective(120px) rotateY(30deg);
+    cursor: pointer;
+}
+
+.page aside .bar.stop:hover{
+    transform: perspective(120px) rotateY(0deg);
+
+}
+
+/* END ASIDE */
+
+/* STATR SINGER */
+
+.page .singer ul h2{
+    background-color: #ff0000c4;
+    border-bottom: 1px solid transparent;
+}
+
+.page .singer ul h2.collapsed{
+    border-bottom: 1px solid white;
+}
+
+.page .singer ul li{
+    cursor: pointer;
+}
+
+.page .singer ul div{
+    background-color: #dddddd;
+}
+
+
+.page .singer ul div:not(.page .singer ul li:nth-of-type(1) div){
+    display: none;
+}
+
+@media(max-width : 991px){
+    .page .singer ul{
+        width: 100% !important;
+    }
+}
+
+@media(max-width : 410px){
+    .page .singer ul{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+/* END SINGER */
+
+/* START COUNTER */
+
+.page .counter{
+    background-image: linear-gradient(#ff00007a, #ff0000c4),
+                    url(../images/count.jpg);
+    background-size: cover;
+}
+
+/* END COUNTER */
+
+/* START JOIN */
+
+.page .join .row > div:nth-child(1) .links li:hover{
+    background-color: red;
+    color: white;
+    border-color: red !important;
+    cursor: pointer;
+}
+
+.form-control{
+    border: var(--bs-border-width) solid #777;
+}
+
+.form-control:focus{
+    border-color: #777;
+    box-shadow: 0 0 0 .25rem #ff000047;
+}
+
+
+.page .join textarea{
+    min-height: 180px;
+}
+
+/* END JOIN */
